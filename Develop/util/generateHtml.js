@@ -35,7 +35,7 @@ const generateTeam = team => {
             <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a></li>
         </ul>
     </div>
-</div>
+</div>[a-zA-Z0-9]/(?=.*[a-z])(?=.*\s)/\d+
         `;
     };
 
