@@ -4,13 +4,13 @@ const generateTeam = team => {
     // create the manager html
     const generateManager = manager => {
         return `
-        <div class="card employee-card">
-        <div class="card-header">
+        <div class="card employee-card m-2 bg-info border-info" style="width: 18rem; min-height: 20rem">
+        <div class="card-header text-white">
             <h2 class="card-title">${manager.getName()}</h2>
             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${manager.getRole()}</h3>
         </div>
         <div class="card-body">
-            <ul class="list-group">
+            <ul class="list-group" style="min-width: 15.5rem">
                 <li class="list-group-item">ID: ${manager.getId()}</li>
                 <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
                 <li class="list-group-item">Office number: ${manager.getOfficeNumber()}</li>
@@ -23,32 +23,32 @@ const generateTeam = team => {
     // create the html for engineers
     const generateEngineer = engineer => {
         return `
-        <div class="card employee-card">
-    <div class="card-header">
+        <div class="card employee-card m-2 bg-info border-info" style="width: 18rem; min-height: 20rem">
+    <div class="card-header text-white">
         <h2 class="card-title">${engineer.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>${engineer.getRole()}</h3>
     </div>
     <div class="card-body">
-        <ul class="list-group">
+        <ul class="list-group" style="min-width: 15.5rem">
             <li class="list-group-item">ID: ${engineer.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></li>
             <li class="list-group-item">GitHub: <a href="https://github.com/${engineer.getGithub()}" target="_blank" rel="noopener noreferrer">${engineer.getGithub()}</a></li>
         </ul>
     </div>
-</div>[a-zA-Z0-9]/(?=.*[a-z])(?=.*\s)/\d+
+</div>
         `;
     };
 
     // create the html for interns
     const generateIntern = intern => {
         return `
-        <div class="card employee-card">
-    <div class="card-header">
+        <div class="card employee-card m-2 bg-info border-info" style="width: 18rem; min-height: 20rem">
+    <div class="card-header text-white">
         <h2 class="card-title">${intern.getName()}</h2>
         <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>${intern.getRole()}</h3>
     </div>
     <div class="card-body">
-        <ul class="list-group">
+        <ul class="list-group" style="min-width: 15.5rem">
             <li class="list-group-item">ID: ${intern.getId()}</li>
             <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
             <li class="list-group-item">School: ${intern.getSchool()}</li>
@@ -80,7 +80,7 @@ const generateTeam = team => {
 }
 
 // export function to generate entire page
-module.exports = team => {
+module.exports = (team, dept) => {
 
     return `
     <!DOCTYPE html>
@@ -100,14 +100,15 @@ module.exports = team => {
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 jumbotron mb-3 team-heading">
-                <h1 class="text-center">My Team</h1>
+            <div class="col-12 jumbotron mb-3 team-heading bg-info text-white">
+                <h1 class="text-center"><strong>My Team</strong></h1>
+                <h2 class="text-center">${dept} Department</h2>
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+            <div class="team-area col-12 d-flex justify-content-center flex-wrap">
                 ${generateTeam(team)}
             </div>
         </div>
