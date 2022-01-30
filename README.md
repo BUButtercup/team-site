@@ -28,7 +28,7 @@ Here is a [video walkthrough](https://drive.google.com/file/d/1twpcsL2xNGraVXaX9
 ## Credits 
 
 
-- [@UW Full Stack Web Dev Bootcamp](https://bootcamp.uw.edu/): 
+- [UW Full Stack Web Dev Bootcamp](https://bootcamp.uw.edu/): 
 
   - Initial starter code and teaching me what I’m doing
 
