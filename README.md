@@ -2,7 +2,11 @@
 
 This program is intended for use by team managers to build a directory site listing the contact information for their project team. It is a Command Line Interface (CLI) program that uses npm inquirer to collect data and generate a uniquely-named team site. 
     
-This program allows team leaders a quick way to catalog the contact info for members of their project team in one place for ease of access. The site itself could also be held as part of a record in perpetuity. I learned a lot about using regex to validate user responses while building this program, which feels like a very powerful tool! It was also great to learn more about how to weave CLIs with JS, HTML, and CSS to churn out files. It was pretty cool seeing it all fit together! In the future, additional features could be added to this program, such as adding direct messaging through slack to the finished site, GitHub intern pages, phone extension or phone messaging features, etc. The sky’s the limit!
+This program allows team leaders a quick way to catalog the contact info for members of their project team in one place for ease of access. The site itself could also be held as part of a record in perpetuity. 
+
+I learned a lot about using regex to validate user responses while building this program, which feels like a very powerful tool! It was also great to learn more about how to weave CLIs with JS, HTML, and CSS to churn out files. It was pretty cool seeing it all fit together! 
+
+In the future, additional features could be added to this program, such as adding direct messaging through slack to the finished site, GitHub intern pages, phone extension or phone messaging features, etc. The sky’s the limit!
 
 ## Table of Contents
 * [Installation](#installation)
